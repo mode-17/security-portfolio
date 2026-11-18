@@ -154,3 +154,21 @@ is usually the most reused artifact.
   blocking finding about the engagement, not a reason to keep probing.
 - **Negatives need evidence:** "I tested it and it's fine" is worthless six weeks later
   without the request, the response, and the date.
+- **A preflight is a prior, not a verdict.** I scored a contract program 16/20 from the
+  outside, then scored it 13/20 after blueprinting reachability from the inside, and stopped
+  with zero dollars spent. Blueprint gets veto power over preflight, permanently.
+- **A primitive is not an impact.** Recovering a live production client secret from a shipped
+  APK is a real result and a non-finding. "What does it open, and can I show it" is a separate
+  gate that has to be passed on its own evidence.
+- **Read the mapping function before the error message.** A `catch`-all that folds every
+  unexpected exception onto one code will point you at the wrong subsystem for hours. The
+  handler is always more informative than the string.
+- **Control your own instrumentation.** Any behaviour observed with hooks, breakpoints or
+  proxies attached has to reproduce without them. A minimal page is the cheapest control in
+  browser testing and the one most often skipped.
+- **A documented defence is a legitimate reason to stop.** If a uniform response removes the
+  oracle a test depends on, spending a day confirming the oracle is absent is a day not spent
+  where a differential is still possible.
+- **Publish the redaction rules, not just the redactions.** Sector, platform, window and
+  vulnerability class combine to identify a target even when the name is withheld. Narrow the
+  window to the year and keep the mechanism generic.

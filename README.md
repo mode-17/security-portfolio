@@ -24,11 +24,19 @@ including the engagements that produced no finding and the ones I closed on purp
 
 | # | Sector | Platform | Window | Focus | Outcome | Write-up |
 |---|---|---|---|---|---|---|
-| 01 | Global apparel retail | HackerOne | 2026 Q4 | GraphQL BFF, step-up auth, OTP attempt controls | 1 report — closed duplicate | [01](engagements/01-retail-otp-step-up.md) |
-| 02 | Online travel | HackerOne | 2026 Q4 | Access control, DOM XSS, postMessage | No report — negatives documented | [02](engagements/02-travel-access-control.md) |
-| 03 | Digital-asset exchange | Bugcrowd | 2026 Q4 | Auth surface, IDOR/BOLA, mass assignment, SSRF | No report — surface unreachable | [03](engagements/03-digital-asset-auth-surface.md) |
-| 04 | Second-hand marketplace | Bugcrowd | 2026 Q4 | BOLA/IDOR, upload, wallet logic | Closed — eligibility gate | [04](engagements/04-marketplace-authz.md) |
-| 05 | Global payments network | HackerOne | 2026 Q4 | 169-asset scope analysis, surface ranking | Closed before traffic | [05](engagements/05-payments-scoping.md) |
+| 01 | Global apparel retail | HackerOne | 2026 | GraphQL BFF, step-up auth, OTP attempt controls | 1 report — closed duplicate | [01](engagements/01-retail-otp-step-up.md) |
+| 02 | Online travel | HackerOne | 2026 | Access control, DOM XSS, postMessage | No report — negatives documented | [02](engagements/02-travel-access-control.md) |
+| 03 | Digital-asset exchange | Bugcrowd | 2026 | Auth surface, IDOR/BOLA, mass assignment, SSRF | No report — surface unreachable | [03](engagements/03-digital-asset-auth-surface.md) |
+| 04 | Second-hand marketplace | Bugcrowd | 2026 | BOLA/IDOR, upload, wallet logic | Closed — eligibility gate | [04](engagements/04-marketplace-authz.md) |
+| 05 | Global payments network | HackerOne | 2026 | 169-asset scope analysis, surface ranking | Closed before traffic | [05](engagements/05-payments-scoping.md) |
+| 06 | Regional payments platform | YesWeHack | 2026 | API misconfiguration, Android client credentials, OIDC | Closed — secret recovered, no impact | [06](engagements/06-mobile-client-credentials.md) |
+| 07 | Identity-verification SDK | HackerOne | 2026 | Browser SDK internals, liveness and tamper controls | Closed — defence held, 2 info-level | [07](engagements/07-liveness-sdk-antitamper.md) |
+| 08 | Multi-chain stablecoin issuer | HackerOne | 2026 | Solidity, bridge accounting, role design | **NO-GO at blueprint** — preflight reversed | [08](engagements/08-preflight-vs-blueprint.md) |
+| 09 | CI merge-queue SaaS | HackerOne | 2026 | API auth model, credential delegation, OIDC | Paused — anti-oracle design, research only | [09](engagements/09-anti-oracle-design.md) |
+
+**On the outcomes.** One duplicate and eight engagements with no accepted finding. That is the
+real record of a year of work, and it is published deliberately: the decisions *not* to report
+are the ones that take judgement, and the ones nobody writes down.
 
 Platforms: HackerOne (`kmode001`), Bugcrowd (`ModestuOsinachi`).
 
